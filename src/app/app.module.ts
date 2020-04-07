@@ -3,22 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {CollapseModule} from 'ngx-bootstrap';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { NavbarComponent } from './navbar/navbar.component';
+import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { EventcardComponent } from './eventcard/eventcard.component';
 import { FooterComponent } from './footer/footer.component';
-import { JumbotronComponent } from './jumbotron/jumbotron.component';
-import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EventcardComponent,
-    FooterComponent,
+    NavbarComponent,
     JumbotronComponent,
-    NavbarComponent
+    EventcardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    CollapseModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
