@@ -44,7 +44,8 @@ import { TicketComponent } from './ticket/ticket.component';
     BidComponent,
     TicketDetailsComponent,
     TicketListComponent,
-    TicketComponent
+    TicketComponent,
+      ...AppRoutingModule.routableComponents
   ],
   imports: [
     BrowserModule,
