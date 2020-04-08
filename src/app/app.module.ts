@@ -50,7 +50,8 @@ import { TicketComponent } from './ticket/ticket.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CollapseModule.forRoot()
+    CollapseModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
