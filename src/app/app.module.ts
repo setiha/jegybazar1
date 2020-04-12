@@ -16,13 +16,14 @@ import { ProfileComponent } from './user/profile/profile.component';
 import { ProfileEditComponent } from './user/profile-edit/profile-edit.component';
 import { EventDetailComponent } from './event/event-detail/event-detail.component';
 import { EventListComponent } from './event/event-list/event-list.component';
-import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
+
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { BidComponent } from './ticket/bid/bid.component';
 import { TicketDetailsComponent } from './ticket/ticket-details/ticket-details.component';
 import { TicketListComponent } from './ticket/ticket-list/ticket-list.component';
 import { TicketComponent } from './ticket/ticket.component';
+import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -38,14 +39,14 @@ import { TicketComponent } from './ticket/ticket.component';
     ProfileEditComponent,
     EventDetailComponent,
     EventListComponent,
-    PageNotFoundComponent,
     AboutComponent,
     HomeComponent,
     BidComponent,
     TicketDetailsComponent,
     TicketListComponent,
     TicketComponent,
-      ...AppRoutingModule.routableComponents
+      ...AppRoutingModule.routableComponents,
+      PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

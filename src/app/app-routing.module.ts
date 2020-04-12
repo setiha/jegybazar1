@@ -2,7 +2,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
+
 import {EventComponent} from './event/event.component';
 import {TicketComponent} from './ticket/ticket.component';
 import {AboutComponent} from './about/about.component';
@@ -14,6 +14,7 @@ import {ProfileComponent} from './user/profile/profile.component';
 import {ProfileEditComponent} from './user/profile-edit/profile-edit.component';
 import {TicketListComponent} from './ticket/ticket-list/ticket-list.component';
 import {TicketDetailsComponent} from './ticket/ticket-details/ticket-details.component';
+import {PageNotFoundComponent} from './core/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -64,6 +65,6 @@ export class AppRoutingModule {
     ProfileComponent,
     ProfileEditComponent,
     RegistrationComponent,
-    PageNotFoundComponent
+
   ];
 }
