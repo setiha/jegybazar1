@@ -26,8 +26,6 @@ const routes: Routes = [
         ]
   },
   {path: 'about', component: AboutComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'registration', component: RegistrationComponent},
   {
     path: 'ticket', component: TicketComponent,
     children: [
@@ -40,10 +38,12 @@ const routes: Routes = [
   children: [
     {path: '', component: ProfileComponent},
     {path: 'edit', component: ProfileEditComponent},
+    {path: 'login', component: LoginComponent},
+    {path: 'registration', component: RegistrationComponent}
   ]
   },
   {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: '**', component: PageNotFoundComponent}
+  {path: '**', component: PageNotFoundComponent},
 ];
 
 @NgModule({
