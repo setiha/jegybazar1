@@ -15,6 +15,7 @@ import {ProfileEditComponent} from './user/profile-edit/profile-edit.component';
 import {TicketListComponent} from './ticket/ticket-list/ticket-list.component';
 import {TicketDetailsComponent} from './ticket/ticket-details/ticket-details.component';
 import {PageNotFoundComponent} from './core/page-not-found/page-not-found.component';
+import {BidComponent} from "./ticket/bid/bid.component";
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -32,7 +33,8 @@ const routes: Routes = [
     children: [
       {path: 'list', component: TicketListComponent},
       {path: 'new', component: TicketDetailsComponent},
-      {path: ':id/bid', component: TicketDetailsComponent}
+      {path: ':id/bid', component: TicketDetailsComponent},
+      {path: ':id/bid', component: BidComponent}
     ]
   },
   {path: 'user',
@@ -60,6 +62,7 @@ export class AppRoutingModule {
     TicketComponent,
     TicketListComponent,
     TicketDetailsComponent,
+    BidComponent,
     AboutComponent,
     LoginComponent,
     ProfileComponent,
