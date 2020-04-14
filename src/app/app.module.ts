@@ -24,6 +24,7 @@ import { TicketDetailsComponent } from './ticket/ticket-details/ticket-details.c
 import { TicketListComponent } from './ticket/ticket-list/ticket-list.component';
 import { TicketComponent } from './ticket/ticket.component';
 import { PageNotFoundComponent } from './core/page-not-found/page-not-found.component';
+import {EventService} from "./shared/event.service";
 
 @NgModule({
   declarations: [
@@ -55,7 +56,7 @@ import { PageNotFoundComponent } from './core/page-not-found/page-not-found.comp
     CollapseModule.forRoot(),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [EventService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
