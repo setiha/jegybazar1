@@ -6,8 +6,8 @@ export class UserModel {
   dateOfBirth: string;
   gender: string;
 
-  constructor(param?: UserModel){
-    if (param){
+  constructor(param?: UserModel) {
+    if (param) {
       Object.assign(this, param);
     }
   }
@@ -22,5 +22,5 @@ export class UserModel {
       gender: 'male'
     };
   }
-
+}
 

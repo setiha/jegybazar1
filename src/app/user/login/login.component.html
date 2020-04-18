@@ -24,7 +24,7 @@
               <label for="loginEmail">Email</label>
               <input title="hibás email cím" name="loginEmail" type="email"
                      class="form-control" id="loginEmail"
-                     placeholder="email">
+                     placeholder="email" value="angular" #email>
               <small id="emailHelp" class="form-text text-muted">a címed
                 nálunk biztonságban lesz
               </small>
@@ -33,7 +33,7 @@
               <label for="loginPassword">Jelszó</label>
               <input name="loginPassword" type="password"
                      class="form-control" id="loginPassword"
-                     placeholder="jelszó">
+                     placeholder="jelszó" value="angular" #password>
             </div>
             <div class="form-check">
               <label class="form-check-label">
@@ -42,9 +42,9 @@
                 emlékezz rám
               </label>
             </div>
-            <button type="submit"
+            <button
                     class="btn btn-primary"
-                    routerLink="/user"
+                    (click) = "login(email.value, password.value)"
             >
               belépés
             </button>
