@@ -9,12 +9,12 @@ import {UserService} from "../../shared/user.service";
 export class NavbarComponent implements OnInit {
   public isCollapsed = true;
 
-  constructor( public usersService: UserService) { }
+  constructor( public userService: UserService) { }
 
   ngOnInit(): void {
   }
 
   logout() {
-    this.usersService.logout();
+    this.userService.logout();
   }
 }
