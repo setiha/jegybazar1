@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {CollapseModule} from 'ngx-bootstrap';
+import {AlertModule, CollapseModule} from 'ngx-bootstrap';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { JumbotronComponent } from './core/jumbotron/jumbotron.component';
@@ -55,7 +55,8 @@ import {UserService} from "./shared/user.service";
     AppRoutingModule,
     BrowserAnimationsModule,
     CollapseModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    AlertModule.forRoot()
   ],
   providers: [EventService, UserService],
   bootstrap: [AppComponent]
