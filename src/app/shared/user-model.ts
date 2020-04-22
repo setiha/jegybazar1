@@ -12,15 +12,26 @@ export class UserModel {
     }
   }
 
+  // UserModel.exampleUser
   static get exampleUser(): UserModel {
     return {
       id: 0,
-      name: 'Legyek Reka Matilda',
-      email: 'legyek@gmail.com',
+      name: 'Legyek Réka Matlida',
+      email: 'legyekrekamatilda@valami.com',
       address: 'Futrinka utca',
       dateOfBirth: '2001.01.01',
-      gender: 'male'
+      gender: 'female'
+    };
+  }
+
+  static get emptyUser(): UserModel {
+    return {
+      id: 0,
+      name: '',
+      email: '',
+      address: '',
+      dateOfBirth: '',
+      gender: ''
     };
   }
 }
-
