@@ -8,7 +8,7 @@ export class TicketService {
   private _tickets: TicketModel[];
 
   constructor(private _eventService: EventService,
-              private  _userService: UserService) {
+              private _userService: UserService) {
     this._tickets = [
       new TicketModel({
         'id': 1,
