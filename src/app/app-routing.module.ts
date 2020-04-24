@@ -16,6 +16,7 @@ import {TicketListComponent} from './ticket/ticket-list/ticket-list.component';
 import {TicketDetailsComponent} from './ticket/ticket-details/ticket-details.component';
 import {PageNotFoundComponent} from './core/page-not-found/page-not-found.component';
 import {BidComponent} from "./ticket/bid/bid.component";
+import {LoggedInGuard} from "./shared/logged-in.guard";
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -39,8 +40,8 @@ const routes: Routes = [
   },
   {path: 'user',
   children: [
-    {path: '', component: ProfileComponent},
-    {path: 'edit', component: ProfileEditComponent},
+    {path: '', component: ProfileComponent, canActivate: [LoggedInGuard]},
+    {path: 'edit', component: ProfileEditComponent, canActivate: [LoggedInGuard]},
     {path: 'login', component: LoginComponent},
     {path: 'registration', component: RegistrationComponent}
   ]
