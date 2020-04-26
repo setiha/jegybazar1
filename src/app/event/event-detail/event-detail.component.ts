@@ -24,11 +24,11 @@ event: EventModel;
   }
   onSubmit(form){
     if (this.event.id){
-      console.log('update-ban vagyunk');
       this._eventService.update(this.event);
+
     }else{
-      console.log('create agban vagyunk');
       this._eventService.create(this.event);
+
     }
     this._router.navigate(['event/list']);
   }
